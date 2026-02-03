@@ -1,0 +1,66 @@
+{
+  "student_id": "S123",
+  "overall_sqi": 100.0,
+  "topic_scores": [
+    {
+      "topic": "Borrowing Costs",
+      "sqi": 100.0
+    }
+  ],
+  "concept_scores": [
+    {
+      "topic": "Borrowing Costs",
+      "concept": "Definitions",
+      "sqi": 100.0
+    }
+  ],
+  "ranked_concepts_for_summary": [
+    {
+      "topic": "Borrowing Costs",
+      "concept": "Definitions",
+      "weight": 0.39,
+      "reasons": [
+        "High importance (A)",
+        "Normal time taken",
+        "Single data point – limited diagnostic confidence"
+      ]
+    }
+  ],
+  "calculation_details": {
+    "per_question": [
+      {
+        "topic": "Borrowing Costs",
+        "concept": "Definitions",
+        "base_score": 2,
+        "importance_weight": 1.0,
+        "difficulty_weight": 1.0,
+        "type_weight": 1.1,
+        "time_multiplier": 1.0,
+        "revisit_bonus": 0.4,
+        "final_weighted_score": 2.6,
+        "max_possible_score": 2.6
+      }
+    ],
+    "normalization": {
+      "method": "(sum_weighted / max_possible) * 100",
+      "clamp_range": [0, 100]
+    }
+  },
+  "summary_customizer_weights": {
+    "wrong_at_least_once": 0.0,
+    "importance_weight": 1.0,
+    "time_proxy": 0.7,
+    "diagnostic_quality": 0.0,
+    "final_weight": 0.39
+  },
+  "metadata": {
+    "diagnostic_prompt_version": "v1",
+    "computed_at": "2026-02-02T00:00:00Z",
+    "engine": "sqi-v0.1",
+    "notes": [
+      "Single attempt only; SQI likely to stabilize with more data",
+      "Max possible score assumed as full weighted marks plus revisit bonus"
+    ]
+  }
+}
+ 
